@@ -1,0 +1,13 @@
+{% extends 'todoapp/home.html' %}
+{% block content %}
+
+    <div class="container">
+            <form action="" method="POSt">
+                {% csrf_token %}
+                <p>Are you Sure you want to Delete "{{item.task}}"?</p>
+                <button class="btn btn-danger ml-2" type="submit">Confirm</button>
+            </form>
+    </div>
+
+
+{% endblock content %}
